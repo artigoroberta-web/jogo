@@ -1,1 +1,103 @@
-ok
+Você é um especialista em design instrucional e em desenvolvimento de jogos
+educativos digitais. Preciso que você escreva um Documento de Requisitos de
+Produto (PRD) completo para um jogo educativo que será desenvolvido na
+plataforma Lovable (ferramenta de criação de apps web via IA).
+
+CONTEXTO DO PROJETO
+O jogo se chama "Arquivo Genético" e é uma aventura narrativa investigativa
+(estilo "visual novel"/livro-jogo com cenas ramificadas e múltiplos finais),
+destinada a ensinar o conceito de HEREDITARIEDADE para alunos do 9º ano do
+Ensino Fundamental. A protagonista, uma estagiária de genética, precisa
+investigar por que um bebê nasceu com uma característica (olhos verdes
+claros) que não aparecia na família há gerações, usando heredogramas,
+quadros de Punnett e raciocínio sobre genes dominantes/recessivos. O jogo
+tem cenas com escolhas narrativas e desafios interativos de conhecimento
+(heredograma, quadro de Punnett, quiz) que influenciam o final da história.
+
+TAREFA
+Escreva um PRD completo e bem estruturado, usando títulos e subtítulos em
+Markdown, que sirva como documento de referência para eu usar como prompt
+de desenvolvimento no Lovable. O PRD deve conter, OBRIGATORIAMENTE e nesta
+ordem, as seções abaixo — não pule nenhuma, mesmo que precise inferir
+informações razoáveis a partir do contexto que dei:
+
+1. OBJETIVOS PEDAGÓGICOS
+   - Quais habilidades e conceitos de genética/hereditariedade o jogo deve
+     desenvolver (ex.: alelos dominantes/recessivos, genótipo x fenótipo,
+     homozigoto/heterozigoto, heredogramas, quadro de Punnett, probabilidade
+     genética).
+   - Relacione com competências da BNCC para Ciências no 9º ano, se
+     pertinente.
+
+2. PÚBLICO-ALVO
+   - Faixa etária, ano escolar, contexto de uso (sala de aula, individual,
+     em duplas), nível de familiaridade esperado com jogos digitais.
+
+3. CONHECIMENTOS PRÉVIOS
+   - O que o aluno já deve saber antes de jogar (ex.: célula, DNA, gene,
+     conceitos básicos de reprodução) e o que o jogo NÃO deve pressupor.
+
+4. NARRATIVA
+   - Sinopse do enredo, tom da história, arco narrativo principal, os
+     pontos de virada (plot twists) e como a resolução do mistério se
+     conecta ao conteúdo científico.
+
+5. PERSONAGENS
+   - Lista de personagens com papel na história, personalidade, motivação
+     e como cada um contribui pedagogicamente (ex.: mentor que reforça
+     conceitos, rival que representa outro caminho de raciocínio).
+
+6. MECÂNICAS
+   - Todas as mecânicas de interação: navegação entre cenas, escolhas de
+     diálogo, desafios de heredograma (drag-and-drop), quadro de Punnett
+     interativo, quiz de múltipla escolha, sistema de pontuação/progresso.
+
+7. REGRAS
+   - Regras de funcionamento de cada mecânica (ex.: quantas tentativas o
+     aluno tem em cada desafio, se há penalidade por erro, se pode voltar
+     atrás, se há tempo limite).
+
+8. PROGRESSÃO
+   - Como o jogador avança pela história, estrutura de fases/cenas, como o
+     desempenho nos desafios acumula ou influencia a progressão, se há
+     salvamento de progresso.
+
+9. FEEDBACK
+   - Que tipo de feedback o jogo dá ao aluno em cada situação (acerto,
+     erro, dica, progresso), tom do feedback (encorajador, informativo),
+     se há explicações científicas mostradas após cada desafio.
+
+10. CRITÉRIOS DE VITÓRIA
+    - O que define que o jogador "completou com sucesso" o jogo/uma fase
+      (ex.: acertar X% dos desafios, chegar ao final "ideal" da história).
+
+11. CRITÉRIOS DE DERROTA
+    - Existe derrota nesse tipo de jogo ou apenas "finais alternativos"?
+      Defina claramente o que acontece quando o aluno erra muito (ex.: final
+      alternativo com convite a jogar novamente, sem punição excessiva).
+
+12. CONTEÚDO CIENTÍFICO
+    - Liste, de forma explícita e correta, todos os conceitos de genética
+      que aparecerão no jogo, com as definições que devem ser usadas
+      (para garantir que a IA de desenvolvimento não gere conteúdo
+      cientificamente incorreto). Inclua exemplos de perguntas/desafios
+      com resposta correta.
+
+13. RESTRIÇÕES
+    - Restrições técnicas (deve funcionar em navegador, sem necessidade de
+      instalação, responsivo para uso em sala de aula), restrições de
+      conteúdo (linguagem apropriada para adolescentes, sem temas
+      sensíveis como disputa de paternidade ou estigmatização de doenças
+      genéticas), restrições de tempo de jogo (ex.: sessão de 20-30
+      minutos), e qualquer limitação da plataforma Lovable que deva ser
+      considerada.
+
+FORMATO DE SAÍDA
+- Use Markdown, com um título por seção (##) na ordem exata listada acima.
+- Use listas e tabelas sempre que ajudarem a clareza.
+- Seja específico e acionável — evite generalidades. Cada seção deve conter
+  informação suficiente para que um desenvolvedor (ou uma IA de
+  desenvolvimento) consiga tomar decisões de implementação sem precisar
+  adivinhar.
+- Ao final, inclua uma seção extra chamada "RESUMO EXECUTIVO" de 3-5 linhas,
+  posicionada no topo do documento, antes da seção 1.
