@@ -1,103 +1,265 @@
-Você é um especialista em design instrucional e em desenvolvimento de jogos
-educativos digitais. Preciso que você escreva um Documento de Requisitos de
-Produto (PRD) completo para um jogo educativo que será desenvolvido na
-plataforma Lovable (ferramenta de criação de apps web via IA).
+Você é um especialista em Design de Jogos Educacionais, Learning Experience Design (LXD), Product Management, UX Design e desenvolvimento de aplicações utilizando a plataforma Lovable.
 
-CONTEXTO DO PROJETO
-O jogo se chama "Arquivo Genético" e é uma aventura narrativa investigativa
-(estilo "visual novel"/livro-jogo com cenas ramificadas e múltiplos finais),
-destinada a ensinar o conceito de HEREDITARIEDADE para alunos do 9º ano do
-Ensino Fundamental. A protagonista, uma estagiária de genética, precisa
-investigar por que um bebê nasceu com uma característica (olhos verdes
-claros) que não aparecia na família há gerações, usando heredogramas,
-quadros de Punnett e raciocínio sobre genes dominantes/recessivos. O jogo
-tem cenas com escolhas narrativas e desafios interativos de conhecimento
-(heredograma, quadro de Punnett, quiz) que influenciam o final da história.
+Sua tarefa é elaborar um Product Requirements Document (PRD) que servirá como entrada para o Lovable gerar um jogo digital funcional.
 
-TAREFA
-Escreva um PRD completo e bem estruturado, usando títulos e subtítulos em
-Markdown, que sirva como documento de referência para eu usar como prompt
-de desenvolvimento no Lovable. O PRD deve conter, OBRIGATORIAMENTE e nesta
-ordem, as seções abaixo — não pule nenhuma, mesmo que precise inferir
-informações razoáveis a partir do contexto que dei:
+IMPORTANTE:
 
-1. OBJETIVOS PEDAGÓGICOS
-   - Quais habilidades e conceitos de genética/hereditariedade o jogo deve
-     desenvolver (ex.: alelos dominantes/recessivos, genótipo x fenótipo,
-     homozigoto/heterozigoto, heredogramas, quadro de Punnett, probabilidade
-     genética).
-   - Relacione com competências da BNCC para Ciências no 9º ano, se
-     pertinente.
+Este NÃO é um PRD tradicional de software.
 
-2. PÚBLICO-ALVO
-   - Faixa etária, ano escolar, contexto de uso (sala de aula, individual,
-     em duplas), nível de familiaridade esperado com jogos digitais.
+O documento deve ser escrito pensando em como uma IA interpreta requisitos para construir uma aplicação.
 
-3. CONHECIMENTOS PRÉVIOS
-   - O que o aluno já deve saber antes de jogar (ex.: célula, DNA, gene,
-     conceitos básicos de reprodução) e o que o jogo NÃO deve pressupor.
+O objetivo não é apenas listar funcionalidades, mas descrever uma experiência completa de aprendizagem.
 
-4. NARRATIVA
-   - Sinopse do enredo, tom da história, arco narrativo principal, os
-     pontos de virada (plot twists) e como a resolução do mistério se
-     conecta ao conteúdo científico.
+O documento deve ser suficientemente detalhado para que o Lovable consiga inferir automaticamente a arquitetura da aplicação, as telas, a navegação, os componentes visuais e a experiência do usuário.
 
-5. PERSONAGENS
-   - Lista de personagens com papel na história, personalidade, motivação
-     e como cada um contribui pedagogicamente (ex.: mentor que reforça
-     conceitos, rival que representa outro caminho de raciocínio).
+Durante toda a escrita siga rigorosamente as seguintes regras.
 
-6. MECÂNICAS
-   - Todas as mecânicas de interação: navegação entre cenas, escolhas de
-     diálogo, desafios de heredograma (drag-and-drop), quadro de Punnett
-     interativo, quiz de múltipla escolha, sistema de pontuação/progresso.
+1. Escreva como um Game Designer
 
-7. REGRAS
-   - Regras de funcionamento de cada mecânica (ex.: quantas tentativas o
-     aluno tem em cada desafio, se há penalidade por erro, se pode voltar
-     atrás, se há tempo limite).
+Não escreva como um analista de sistemas.
 
-8. PROGRESSÃO
-   - Como o jogador avança pela história, estrutura de fases/cenas, como o
-     desempenho nos desafios acumula ou influencia a progressão, se há
-     salvamento de progresso.
+Descreva a experiência do jogador.
 
-9. FEEDBACK
-   - Que tipo de feedback o jogo dá ao aluno em cada situação (acerto,
-     erro, dica, progresso), tom do feedback (encorajador, informativo),
-     se há explicações científicas mostradas após cada desafio.
+Explique o que acontece em cada etapa da investigação.
 
-10. CRITÉRIOS DE VITÓRIA
-    - O que define que o jogador "completou com sucesso" o jogo/uma fase
-      (ex.: acertar X% dos desafios, chegar ao final "ideal" da história).
+Faça o leitor visualizar a aplicação.
 
-11. CRITÉRIOS DE DERROTA
-    - Existe derrota nesse tipo de jogo ou apenas "finais alternativos"?
-      Defina claramente o que acontece quando o aluno erra muito (ex.: final
-      alternativo com convite a jogar novamente, sem punição excessiva).
+2. O jogo deve parecer um software profissional
 
-12. CONTEÚDO CIENTÍFICO
-    - Liste, de forma explícita e correta, todos os conceitos de genética
-      que aparecerão no jogo, com as definições que devem ser usadas
-      (para garantir que a IA de desenvolvimento não gere conteúdo
-      cientificamente incorreto). Inclua exemplos de perguntas/desafios
-      com resposta correta.
+Evite aparência de quiz.
 
-13. RESTRIÇÕES
-    - Restrições técnicas (deve funcionar em navegador, sem necessidade de
-      instalação, responsivo para uso em sala de aula), restrições de
-      conteúdo (linguagem apropriada para adolescentes, sem temas
-      sensíveis como disputa de paternidade ou estigmatização de doenças
-      genéticas), restrições de tempo de jogo (ex.: sessão de 20-30
-      minutos), e qualquer limitação da plataforma Lovable que deva ser
-      considerada.
+Evite aparência de formulário.
 
-FORMATO DE SAÍDA
-- Use Markdown, com um título por seção (##) na ordem exata listada acima.
-- Use listas e tabelas sempre que ajudarem a clareza.
-- Seja específico e acionável — evite generalidades. Cada seção deve conter
-  informação suficiente para que um desenvolvedor (ou uma IA de
-  desenvolvimento) consiga tomar decisões de implementação sem precisar
-  adivinhar.
-- Ao final, inclua uma seção extra chamada "RESUMO EXECUTIVO" de 3-5 linhas,
-  posicionada no topo do documento, antes da seção 1.
+Evite sequência de perguntas.
+
+A interface deve parecer um sistema utilizado dentro do contexto da narrativa.
+
+Exemplos:
+
+laboratório
+hospital
+delegacia
+museu
+estação espacial
+centro de pesquisa
+empresa
+
+Sempre priorize documentos, fichas, cartas, mapas, painéis, relatórios, prontuários e arquivos.
+
+3. A aprendizagem acontece pela investigação
+
+O estudante nunca recebe diretamente a resposta.
+
+Ele deve:
+
+coletar evidências;
+
+comparar informações;
+
+formular hipóteses;
+
+testar hipóteses;
+
+revisar hipóteses;
+
+emitir uma conclusão.
+
+4. A narrativa deve conduzir toda a experiência
+
+O jogador assume um papel profissional.
+
+Existe uma missão.
+
+Existe um problema.
+
+Cada etapa libera novas evidências.
+
+A história deve justificar todas as interações do sistema.
+
+5. Escreva um MVP
+
+Não invente mecânicas complexas.
+
+Não inclua:
+
+inventário;
+sistema de moedas;
+níveis;
+ranking;
+multiplayer;
+combate;
+missões paralelas.
+
+O objetivo é construir um primeiro ciclo iterativo para Design-Based Research (DBR).
+
+6. Estrutura obrigatória
+
+O documento deve conter exatamente as seguintes seções.
+
+Product Requirements Document
+
+Título
+
+Versão
+
+Objetivo do ciclo iterativo
+
+1. Visão Geral
+
+Apresente:
+
+objetivo do produto;
+contexto;
+diferencial pedagógico;
+experiência pretendida.
+2. Público-alvo
+
+Informe:
+
+etapa de ensino;
+disciplina;
+conteúdo;
+contexto de utilização.
+3. Objetivos de aprendizagem
+
+Liste entre quatro e seis objetivos.
+
+Todos devem utilizar verbos observáveis.
+
+4. Narrativa
+
+Construa uma narrativa curta.
+
+Ela deve justificar o papel assumido pelo jogador.
+
+Não ultrapasse cinco parágrafos.
+
+5. Estilo Visual
+
+Descreva:
+
+identidade visual;
+atmosfera;
+paleta;
+tipografia;
+aparência geral.
+
+Evite mencionar tecnologias.
+
+6. Fluxo Principal
+
+Apresente um diagrama textual utilizando setas.
+
+Exemplo:
+
+Tela Inicial
+
+↓
+
+Receber Missão
+
+↓
+
+Investigação
+
+↓
+
+Hipótese
+
+↓
+
+Conclusão
+
+7. Estrutura das Salas
+
+Para CADA sala utilize exatamente esta estrutura.
+
+Nome da sala
+
+Objetivo
+
+Experiência
+
+Interface
+
+Critério de progressão
+
+Não escreva apenas funcionalidades.
+
+Explique como o estudante interage com a interface.
+
+Explique o que é revelado.
+
+Explique o que muda ao concluir a etapa.
+
+8. Mecânicas
+
+Explique:
+
+progressão;
+desbloqueios;
+feedback;
+coleta de evidências;
+revisão de hipóteses.
+
+Todas devem ser simples.
+
+9. Interface
+
+Descreva:
+
+painel lateral;
+barra de progresso;
+cartões;
+documentos;
+modais;
+animações;
+navegação.
+
+Escreva de forma que o Lovable consiga imaginar toda a interface.
+
+10. Feedback
+
+Nunca utilize apenas "Resposta correta".
+
+Sempre explique:
+
+por que está correto;
+por que está incorreto;
+qual evidência sustenta aquela conclusão.
+11. Requisitos Técnicos
+
+Liste apenas requisitos essenciais.
+
+Não transforme esta seção em um backlog técnico.
+
+12. Critérios de Sucesso
+
+Defina critérios objetivos para considerar o MVP concluído.
+
+Estilo de escrita
+
+Escreva em linguagem natural.
+
+Priorize parágrafos curtos.
+
+Evite excesso de bullets.
+
+Explique a experiência antes da funcionalidade.
+
+Sempre pense primeiro como um designer de aprendizagem.
+
+Somente depois pense como um gerente de produto.
+
+Resultado esperado
+
+O documento deve permitir que o Lovable gere automaticamente:
+
+a estrutura completa da aplicação;
+todas as telas;
+a navegação;
+os componentes;
+a identidade visual;
+o fluxo do jogo.
+
+Ao ler o PRD, deve ser possível imaginar toda a experiência do usuário antes mesmo da aplicação existir.
